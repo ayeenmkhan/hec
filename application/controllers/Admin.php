@@ -191,6 +191,40 @@ if($this->session->userdata('user_id') != TRUE){
 	   // $data['schools']=getAllSchools();
 		$this->load->view('dashboard/patients',$data);	
 
+}		public function sender(){
+		// echo "string";exit;
+if($this->session->userdata('user_id') != TRUE){
+
+	 	redirect(SURL);
+		
+		 };
+
+		$data['header_script'] = $this->load->view('common/header_script', '', TRUE);
+
+		$data['header'] = $this->load->view('common/header', '', TRUE);
+
+		$data['footer'] = $this->load->view('common/footer', '', TRUE);
+	   $data['users']=getAllUsers();
+	   // $data['schools']=getAllSchools();
+		$this->load->view('dashboard/sender',$data);	
+
+}		public function receiver(){
+		// echo "string";exit;
+if($this->session->userdata('user_id') != TRUE){
+
+	 	redirect(SURL);
+		
+		 };
+
+		$data['header_script'] = $this->load->view('common/header_script', '', TRUE);
+
+		$data['header'] = $this->load->view('common/header', '', TRUE);
+
+		$data['footer'] = $this->load->view('common/footer', '', TRUE);
+	   $data['users']=getAllUsers();
+	   // $data['schools']=getAllSchools();
+		$this->load->view('dashboard/receiver',$data);	
+
 }	
 
 

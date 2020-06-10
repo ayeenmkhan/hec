@@ -7,7 +7,7 @@
             <div class="container-fluid">
             <div class="row">
             <div class="col-lg-6">  
-              <h2 class="no-margin-bottom">Welcome To Menabev Management System </h2>
+              <h2 class="no-margin-bottom">Welcome to Haris tech Management System </h2>
             </div>
           
             </div>
@@ -38,7 +38,7 @@
                   <div class="daily-feeds card"> 
                   
              <div class="card-header">
-             <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-sm">Add Gifts</button>
+             <!-- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-sm">Add Gifts</button> -->
             </div>
 
               <div class="card-body no-padding">
@@ -48,27 +48,41 @@
                       <thead>
                         <tr>
                           <th>Sr#</th>
-                          <th>Gift Name En</th>
-                          <th>Gift Name Ar</th>
-                          <th>Picture</th>
-                          <th>Action</th>
+                          <th>Sender Name</th>
+                          <th>Sender Address</th>
+                          <th>Receiver Address</th>
+                          <th>Currier Type</th>
+                          <th>Weight</th>
+                          <!-- <th>Action</th> -->
                         </tr>
                       </thead>
                       <tbody>  
-                        <?php $count=1;foreach($coupons as $res){?>
+                      
                         <tr>
-                          <td><?php echo $count;?></td>
-                          <td><?php echo $res['name_en'];?></td>
-                          <td><?php echo $res['name_ar'];?></td>
-                          <td><img src="<?php echo SURL;?>uploads/items/<?php echo $res['picture']?>" width="50" height="50"></td>
-                          <td>
-                            <p>
-                              <a href="#" data-toggle="modal" data-target="#userModal" onclick="EditUser(<?php echo $res['id']?>)"><i class="fa fa-edit fa-2x"></i></a>
-                              <a href="<?php echo SURL?>admin/delete_gift/<?php echo $res['id'];?>" onclick="return confirm('Are you sure want to delete ?') "><i class="fa fa-trash fa-2x"></i></a>
-                            </p>
-                          </td>
+                          <td>1</td>
+                          <td>Ali</td>
+                          <td>ABC</td>
+                          <td>ABC</td>
+                          <td>letter</td>
+                          <td>10 KG</td>
                         </tr>
-                        <?php $count++;}?>                                              
+                        <tr>
+                          <td>2</td>
+                          <td>Ali</td>
+                          <td>ABC</td>
+                          <td>ABC</td>
+                          <td>Cloths</td>
+                          <td>10 KG</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Ali</td>
+                          <td>ABC</td>
+                          <td>ABC</td>
+                          <td>Application</td>
+                          <td>10 KG</td>
+                        </tr>
+                                                                  
 
                       </tbody>
                     </table>

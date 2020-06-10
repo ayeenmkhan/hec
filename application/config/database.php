@@ -104,11 +104,11 @@ $active_record = TRUE;
 
  $db['default']['hostname'] = 'localhost';
  $db['default']['username'] = 'root';
- $db['default']['password'] = '123';
+ $db['default']['password'] = '1111';
 
 $db['default']['database'] = 'school';
 
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 
 $db['default']['dbprefix'] = '';
 

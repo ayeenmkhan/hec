@@ -50,9 +50,9 @@
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
-           <?php if($this->session->userdata('user_type')==1 || $this->session->userdata('user_type')==2){?>
-            <li class="<?php echo @$_GET['h']?>"><a href="<?php echo SURL?>admin/home?h=active"> <i class="fa fa-users"></i>Users</a></li>
-         <!--     <li class="<?php echo @$_GET['u']?>"><a href="<?php echo SURL?>admin/school?u=active"> <i class="icon-home"></i>Corona Test Centers</a></li> -->
-          <?php }?>
+    
+        <li class="<?php echo @$_GET['h']?>"><a href="<?php echo SURL?>admin/home?h=active"> <i class="fa fa-users"></i>Users</a></li>
+        <li class="<?php echo @$_GET['s']?>"><a href="<?php echo SURL?>admin/sender?s=active"> <i class="fa fa-users"></i>Sender</a></li>
+        <li class="<?php echo @$_GET['r']?>"><a href="<?php echo SURL?>admin/receiver?r=active"> <i class="fa fa-users"></i>Reciver</a></li>
     
         </nav>
